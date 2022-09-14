@@ -89,6 +89,8 @@ public class SupplierController{
 				.orElseThrow(() -> new SupplierNotFoundException(companyName))
 				.displayContacts();
 	}
+	
+	@PutMapping("suppliers/{companyName}/contacts/{name}")
 
 	  @DeleteMapping("/suppliers/{companyName}")
 	  ResponseEntity<?> deleteSupplier(@PathVariable String companyName) {
