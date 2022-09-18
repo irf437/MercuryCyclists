@@ -22,6 +22,9 @@ public class Supplier {
 	@OneToMany(mappedBy = "supplier", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	private Set<Contact> contacts;
 	
+	@OneToMany(mappedBy = "supplier", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	private Set<Part> parts;
+	
 	Supplier() {}
 	
 	Supplier(String companyName, String base){

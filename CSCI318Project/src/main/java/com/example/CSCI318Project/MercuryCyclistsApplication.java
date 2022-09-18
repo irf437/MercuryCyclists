@@ -13,9 +13,9 @@ import repos.*;
 
 
 @SpringBootApplication
-@ComponentScan(basePackageClasses = {SupplierController.class, ContactController.class, ContactModelAssembler.class, SupplierModelAssembler.class})
-@EnableJpaRepositories(basePackageClasses = {ContactRepository.class, SupplierRepository.class})
-@EntityScan(basePackageClasses = {Contact.class, Supplier.class})
+@ComponentScan(basePackageClasses = {SupplierController.class, ContactController.class, PartController.class, PartModelAssembler.class, ContactModelAssembler.class, SupplierModelAssembler.class})
+@EnableJpaRepositories(basePackageClasses = {PartRepository.class, ContactRepository.class, SupplierRepository.class})
+@EntityScan(basePackageClasses = {Part.class, Contact.class, Supplier.class})
 public class MercuryCyclistsApplication {
 
 	public static void main(String[] args) {
