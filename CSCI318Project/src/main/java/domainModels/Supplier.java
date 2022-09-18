@@ -41,6 +41,14 @@ public class Supplier {
 		this.contacts.add(contact);
 	}
 	
+	public Set<Part> displayParts() {
+		return this.parts;
+	}
+	
+	public void pushPart(Part part) {
+		this.parts.add(part);
+	}
+	
 	public String getCompanyName() {
 		return this.companyName;
 	}
