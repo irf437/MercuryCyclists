@@ -83,6 +83,7 @@ public class SupplierController{
 	    		.body(entityModel);
 	    }
 	
+	//Contact	
 	@GetMapping("/suppliers/{companyName}/contacts")
 	public Set<Contact> contacts(@PathVariable String companyName) {
 		return repository.findById(companyName)
