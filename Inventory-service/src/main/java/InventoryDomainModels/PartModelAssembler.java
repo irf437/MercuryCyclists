@@ -1,4 +1,4 @@
-package domainModels;
+package InventoryDomainModels;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
@@ -6,8 +6,7 @@ import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.stereotype.Component;
 
-import controllers.ContactController;
-import controllers.PartController;
+import InventoryControllers.PartController;
 
 @Component
 public class PartModelAssembler implements RepresentationModelAssembler<Part, EntityModel<Part>> {

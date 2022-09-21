@@ -1,4 +1,4 @@
-package exceptionHandlers;
+package InventoryExceptionHandlers;
 
 public class PartNotFoundException extends RuntimeException {
 

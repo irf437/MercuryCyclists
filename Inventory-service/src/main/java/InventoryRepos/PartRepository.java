@@ -1,8 +1,8 @@
-package repos;
+package InventoryRepos;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import domainModels.Part;
+import InventoryDomainModels.Part;
 
 public interface PartRepository extends JpaRepository<Part, String> {
 

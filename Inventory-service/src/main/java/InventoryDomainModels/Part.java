@@ -1,4 +1,4 @@
-package domainModels;
+package InventoryDomainModels;
 
 import java.util.Objects;
 
@@ -8,6 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
+import domainModels.Supplier;
 
 @Entity
 @Table(name = "parts")
